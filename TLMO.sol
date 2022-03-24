@@ -18,8 +18,4 @@ contract TLMO is Ownable, Vaulteable, ERC20 {
         _mint(account, amount);
         minter = false ;
     }
-    
-    function burn(address account, uint256 amount) external virtual onlyVault{ 
-        _burn(account, amount);
-    }
 }
